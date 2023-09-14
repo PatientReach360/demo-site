@@ -1,8 +1,15 @@
 <html>
   <head>
+    <script type="module" src="https://unpkg.com/pr360-questionnaire"></script>
+    <style>
+      pr360-questionnaire::part(begin-button) {
+        background-color: blueviolet;
+      }
+    </style>
   </head>
 
   <body>
     This is a website for a specialist practice.
+    <pr360-questionnaire url="wss://patientreach360.com/socket" site-id="9d7a2549-2466-4ae8-92d9-3fd476eb9550">Launch the survey</pr360-questionnaire>
   </body>
 </html>
